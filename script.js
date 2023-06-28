@@ -13,11 +13,23 @@ function getComputerChoice(computerChoice) {
 
 function getPlayerChoice(playerChoice) {
     // gets user choice via input
-    let userInput = prompt("Pick one: Rock, Paper, or Scissors");
+    userInput = prompt("Pick a number: 1 = Rock, 2 = Paper, or 3 = Scissors");
 
     // gets player choice
+    if (userInput == 1) {
+        userInput = "Rock";
+    } else if (userInput == 2) {
+        userInput = "Paper";
+    } else if (userInput == 3) {
+        userInput = "Scissors";
+    } else {
+        alert("Invalid Input");
+    }
+
+  
+
     playerChoice = userInput;
-    return userInput;
+    return playerChoice;
 
 }
 
