@@ -8,5 +8,17 @@ function getComputerChoice(computerChoice) {
     return computerChoice;
 
 }
+// check if works
+// console.log(getComputerChoice());
 
-console.log(getComputerChoice());
+function getPlayerChoice(playerChoice) {
+    // gets user choice via input
+    let userInput = prompt("Pick one: Rock, Paper, or Scissors");
+
+    // gets player choice
+    playerChoice = userInput;
+    return userInput;
+
+}
+
+console.log(getPlayerChoice());
