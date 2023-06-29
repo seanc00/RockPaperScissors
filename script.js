@@ -1,3 +1,4 @@
+
 // console.log("hello?");
 
 function getComputerChoice(computerChoice) {
@@ -9,7 +10,7 @@ function getComputerChoice(computerChoice) {
 
 }
 // check if works
-// console.log(getComputerChoice());
+// console.log(getPlayerChoice());
 
 function getPlayerChoice(playerChoice) {
     // gets user choice via input
@@ -26,11 +27,10 @@ function getPlayerChoice(playerChoice) {
         alert("Invalid Input");
     }
 
-  
-
+    // return player choice
     playerChoice = userInput;
     return playerChoice;
-
 }
-
 console.log(getPlayerChoice());
+console.log(getComputerChoice());
+
