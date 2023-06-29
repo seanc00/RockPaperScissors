@@ -77,10 +77,15 @@ function playRound(player, computer) {
     return { player: player, computer: computer };
 }
 
-console.log(playRound());
-console.log(playRound());
-console.log(playRound());
-console.log(playRound());
-console.log(playRound());
+function game() {
+    console.log(playRound());
+    console.log(playRound());
+    console.log(playRound());
+    console.log(playRound());
+    console.log(playRound());
+}
+
+game();
+
 
 
