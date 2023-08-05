@@ -11,10 +11,24 @@ function computerChoice() {
     computerChoice = 'Scissors'
   }
 
-  console.log(computerChoice);
+  // console.log(computerChoice);
   return computerChoice;
 }
 
 function playGame(playerChoice) {
-  console.log(playerChoice);
+  const computer = computerChoice();
+  let result = '';
+
+  // all rock outcomes
+  if (playerChoice === 'Rock' && computer === 'Rock') {
+    result = 'Draw!';
+  } else if (playerChoice === 'Rock' && computer === 'Paper') {
+    result = 'Loss!';
+  } else if (playerChoice === 'Rock' && computer === 'Scissors') {
+    result = 'Win!';
+  }
+
+  console.log(result);
+  //console.log(playerChoice);
+  //console.log(computer);
 }
