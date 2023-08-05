@@ -12,22 +12,25 @@ background: linear-gradient(135deg, #48484855 25%, transparent 25%)
   margin: 0;
 }
 
-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .titleContainer {
+  display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
   width:100%;
   padding: 20px;
-  opacity: 0.8;
   margin-bottom: 40px
 }
 
+.container {
+  display: flex;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+
+}
 .playerOptionsContainer > div > h3 {
   background: rgb(146, 125, 125);
   padding: 20px;
@@ -36,25 +39,33 @@ div {
   width: 300px;
   text-align: center;
   font-size: 25px;
+  width: 420px;
 }
 .playerOptionsContainer {
+  display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 20px;
-  width: 100%;
 }
 .playerOptions {
+  display: flex;
   gap: 20px;
   padding: 20px;
 }
 .playerOptions > button {
   width: 150px;
   height: 150px;
+  background-color: white;
 }
 
 .gameInfoContainer {
+  display: flex;
   background-color: white;
   padding: 20px;
   border-radius: 20px;
   flex-direction: column;
   gap: 5px;
+  width: 300px;
+  height: 250px;
+  border: #484848 solid 5px;
 }

@@ -13,27 +13,31 @@
       <h1 class="title">Rock, Paper, Scissors</h1>
     </div>
 
-    <div class="playerOptionsContainer">
-      <div>
-        <h3>◉  Pick one to play!  ◉</h3>
+    <div class="container">
+      <div class="playerOptionsContainer">
+        <div>
+          <h3>◉  Pick one to play!  ◉</h3>
+        </div>
+        <div class="playerOptions">
+          <button onclick="
+            playGame('Rock');
+          " class="rock">Rock</button>
+          <button onclick="
+            playGame('Paper');
+          " class="paper">Paper</button>
+          <button onclick="
+            playGame('Scissors');
+          " class="scissors">Scissors</button>
+        </div>
       </div>
-      <div class="playerOptions">
-        <button onclick="
-          playGame('Rock');
-        " class="rock">R</button>
-        <button onclick="
-          playGame('Paper');
-        " class="paper">P</button>
-        <button onclick="
-          playGame('Scissors');
-        " class="scissors">S</button>
+      
+      <div class="gameInfoContainer">
+        <h4>SCORE - <span class="gameOutcome">Nil</span></h4>
+        <p>Wins: 0 || Draws: 0 || Losses: 0</p>
+        <h4>Game Information:</h4>
+        <p class="gameMoves">Player: x_x || Computer: x_x</p>
+
       </div>
     </div>
-
-    <div class="gameInfoContainer">
-      <p>Game Information:</p>
-      <p class="gameMoves"></p>
-    </div>
-
   </body>
 </html>

@@ -48,6 +48,8 @@ function playGame(playerChoice) {
 
   document.querySelector('.gameMoves')
     .innerHTML = `Player: ${playerChoice} || Computer: ${computer}`
+  document.querySelector('.gameOutcome')
+    .innerHTML = `${result}`;
 
   //console.log(result);
   //console.log(playerChoice);
