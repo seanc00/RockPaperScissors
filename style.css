@@ -1,0 +1,13 @@
+body {
+  background-color: #000000;
+opacity: 1;
+background: linear-gradient(135deg, #48484855 25%, transparent 25%)
+   -34px 0/ 68px 68px, linear-gradient(225deg, #484848 25%, transparent 
+   25%) -34px 0/ 68px 68px, linear-gradient(315deg, #48484855 25%, transparent 
+   25%) 0px 0/ 68px 68px, linear-gradient(45deg, #484848 25%, #000000 25%) 
+   0px 0/ 68px 68px;
+}
+
+div {
+  display: flex;
+}
