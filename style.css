@@ -50,3 +50,11 @@ div {
   width: 150px;
   height: 150px;
 }
+
+.gameInfoContainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  flex-direction: column;
+  gap: 5px;
+}
