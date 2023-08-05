@@ -46,7 +46,11 @@ function playGame(playerChoice) {
     result = 'Win!';
   }
 
-  console.log(result);
-  console.log(playerChoice);
-  console.log(computer);
+  document.querySelector('.gameMoves')
+    .innerHTML = `Player: ${playerChoice} || Computer: ${computer}`
+
+  //console.log(result);
+  //console.log(playerChoice);
+  //console.log(computer);
 }
+
