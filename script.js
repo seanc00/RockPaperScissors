@@ -1,18 +1,3 @@
-function rock() {
-  let playerChoice = 'Rock';
-  console.log(playerChoice);
-}
-
-function scissors() {
-  let playerChoice = 'Scissors'
-  console.log(playerChoice);
-}
-
-function paper() {
-  let playerChoice = 'Paper'
-  console.log(playerChoice);
-}
-
 // randomises computer choice for rock/paper/scissors
 function computerChoice() {
   let computerChoice = '';
@@ -28,4 +13,8 @@ function computerChoice() {
 
   console.log(computerChoice);
   return computerChoice;
+}
+
+function playGame(playerChoice) {
+  console.log(playerChoice);
 }
