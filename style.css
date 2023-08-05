@@ -28,11 +28,25 @@ div {
   margin-bottom: 40px
 }
 
-.playerOptionsContainer > div {
-  background: white;
-  padding: 10px;
+.playerOptionsContainer > div > h3 {
+  background: rgb(146, 125, 125);
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px white solid;
+  width: 300px;
+  text-align: center;
+  font-size: 25px;
 }
 .playerOptionsContainer {
   flex-direction: column;
   gap: 20px;
+  width: 100%;
+}
+.playerOptions {
+  gap: 20px;
+  padding: 20px;
+}
+.playerOptions > button {
+  width: 150px;
+  height: 150px;
 }
