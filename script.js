@@ -1,3 +1,9 @@
+let score = {
+  wins: 0,
+  draws: 0,
+  losses: 0
+};
+
 // randomises computer choice for rock/paper/scissors
 function computerChoice() {
   let computerChoice = '';
@@ -46,10 +52,18 @@ function playGame(playerChoice) {
     result = 'Win!';
   }
 
+  // score code
+  if (result === 'Win!') {
+    score.wins++;
+  } 
+
+  // interactive changes for stats board
   document.querySelector('.gameMoves')
     .innerHTML = `Player: ${playerChoice} || Computer: ${computer}`
   document.querySelector('.gameOutcome')
     .innerHTML = `${result}`;
+
+  console.log(score);
 
   return result;
 
@@ -57,15 +71,3 @@ function playGame(playerChoice) {
   //console.log(playerChoice);
   //console.log(computer);
 }
-
-let score = {
-  wins: 0,
-  draws: 0,
-  losses: 0
-};
-
-function scores() {
-}
-
-
-
