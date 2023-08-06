@@ -51,8 +51,21 @@ function playGame(playerChoice) {
   document.querySelector('.gameOutcome')
     .innerHTML = `${result}`;
 
+  return result;
+
   //console.log(result);
   //console.log(playerChoice);
   //console.log(computer);
 }
+
+let score = {
+  wins: 0,
+  draws: 0,
+  losses: 0
+};
+
+function scores() {
+}
+
+
 
