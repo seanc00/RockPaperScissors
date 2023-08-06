@@ -55,7 +55,11 @@ function playGame(playerChoice) {
   // score code
   if (result === 'Win!') {
     score.wins++;
-  } 
+  } else if (result === 'Draw!') {
+    score.draws++;
+  } else if (result === 'Loss!') {
+    score.losses++;
+  }
 
   // interactive changes for stats board
   document.querySelector('.gameMoves')
@@ -63,10 +67,9 @@ function playGame(playerChoice) {
   document.querySelector('.gameOutcome')
     .innerHTML = `${result}`;
 
-  console.log(score);
-
   return result;
 
+  // console.log(score);
   //console.log(result);
   //console.log(playerChoice);
   //console.log(computer);
