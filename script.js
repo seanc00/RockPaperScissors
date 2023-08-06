@@ -1,4 +1,4 @@
-let score = {
+const score = {
   wins: 0,
   draws: 0,
   losses: 0
@@ -61,15 +61,18 @@ function playGame(playerChoice) {
     score.losses++;
   }
 
+  document.querySelector('.scoreDisplay').innerHTML =
+    `Wins: ${score.wins} || Draws: ${score.draws} || Losses: ${score.losses}`;
+
   // interactive changes for stats board
   document.querySelector('.gameMoves')
-    .innerHTML = `Player: ${playerChoice} || Computer: ${computer}`
+    .innerHTML = `Player: ${playerChoice} || Computer: ${computer}`;
   document.querySelector('.gameOutcome')
     .innerHTML = `${result}`;
 
   return result;
 
-  // console.log(score);
+  //console.log(score);
   //console.log(result);
   //console.log(playerChoice);
   //console.log(computer);
