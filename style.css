@@ -1,15 +1,12 @@
 body {
   background-color: #000000;
-opacity: 1;
-background: linear-gradient(135deg, #48484855 25%, transparent 25%)
-   -34px 0/ 68px 68px, linear-gradient(225deg, #484848 25%, transparent 
-   25%) -34px 0/ 68px 68px, linear-gradient(315deg, #48484855 25%, transparent 
-   25%) 0px 0/ 68px 68px, linear-gradient(45deg, #484848 25%, #000000 25%) 
-   0px 0/ 68px 68px;
-}
+  background-color: #000000;
+  opacity: 1;
+  background: linear-gradient(135deg, #f00bd955 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #f00b51 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #f00bd955 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #f00b51 25%, #000000 25%) 0px 0/ 80px 80px;}
 
 * {
   margin: 0;
+  color: #999999;
 }
 
 
@@ -18,10 +15,14 @@ background: linear-gradient(135deg, #48484855 25%, transparent 25%)
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   width:100%;
-  padding: 20px;
+  border: solid 3px #999999;
+  padding-bottom: 20px;
   margin-bottom: 40px
+}
+.title {
+  width: 600px;
 }
 
 .container {
@@ -32,10 +33,10 @@ background: linear-gradient(135deg, #48484855 25%, transparent 25%)
 
 }
 .playerOptionsContainer > div > h3 {
-  background: rgb(146, 125, 125);
+  background: rgb(0, 0, 0);
   padding: 20px;
   border-radius: 20px;
-  border: 2px white solid;
+  border: solid 3px #999999;
   width: 300px;
   text-align: center;
   font-size: 25px;
@@ -55,17 +56,20 @@ background: linear-gradient(135deg, #48484855 25%, transparent 25%)
 .playerOptions > button {
   width: 150px;
   height: 150px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
 }
 
 .gameInfoContainer {
   display: flex;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   padding: 20px;
   border-radius: 20px;
   flex-direction: column;
-  gap: 5px;
+  gap: 0px;
   width: 300px;
   height: 250px;
-  border: #484848 solid 5px;
+  border: solid 3px #999999;
+}
+.gameOutcome {
+  color: #f00b51;
 }
