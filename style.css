@@ -58,6 +58,10 @@ body {
   height: 150px;
   background-color: rgb(0, 0, 0);
 }
+button > img {
+  height: 100px;
+  width: 100px;
+}
 
 .gameInfoContainer {
   display: flex;
