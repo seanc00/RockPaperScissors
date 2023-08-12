@@ -4,6 +4,19 @@ const score = {
   losses: 0
 };
 
+function resetScore() {
+  if (score.wins === 5 || score.losses === 5) {
+    score.wins = 0;
+    score.losses = 0;
+    score.draws = 0;
+  }
+}
+
+function displayScore() {
+  document.querySelector('.scoreDisplay').innerHTML =
+    `Wins: ${score.wins} || Draws: ${score.draws} || Losses: ${score.losses}`;
+}
+
 // randomises computer choice for rock/paper/scissors
 function computerChoice() {
   let computerChoice = '';
@@ -61,9 +74,8 @@ function playGame(playerChoice) {
     score.losses++;
   }
 
-  document.querySelector('.scoreDisplay').innerHTML =
-    `Wins: ${score.wins} || Draws: ${score.draws} || Losses: ${score.losses}`;
-
+  displayScore();
+  
   // interactive changes for stats board
   document.querySelector('.gameMoves')
     .innerHTML = `Player: ${playerChoice} || Computer: ${computer}`;
@@ -88,10 +100,3 @@ function playGame(playerChoice) {
   //console.log(computer);
 }
 
-function resetScore() {
-  if (score.wins === 5 || score.losses === 5) {
-    score.wins = 0;
-    score.losses = 0;
-    score.draws = 0;
-  }
-}
