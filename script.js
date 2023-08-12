@@ -73,10 +73,10 @@ function playGame(playerChoice) {
   // code to reset score and determine winner
   if (score.wins === 5) {
     setTimeout(()=>{alert('You Win!!! Well done :)')}, 300);
-    //alert('You Win!!! Well done :)');
+    resetScore();
   } else if (score.losses === 5) {
     setTimeout(()=>{alert('You Lose!!! Better luck next time... :(')}, 300);
-
+    resetScore();
 
   }
 
@@ -86,4 +86,12 @@ function playGame(playerChoice) {
   //console.log(result);
   //console.log(playerChoice);
   //console.log(computer);
+}
+
+function resetScore() {
+  if (score.wins === 5 || score.losses === 5) {
+    score.wins = 0;
+    score.losses = 0;
+    score.draws = 0;
+  }
 }
