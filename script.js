@@ -86,10 +86,11 @@ function playGame(playerChoice) {
   if (score.wins === 5) {
     setTimeout(()=>{alert('You Win!!! Well done :)')}, 300);
     resetScore();
+    displayScore();
   } else if (score.losses === 5) {
     setTimeout(()=>{alert('You Lose!!! Better luck next time... :(')}, 300);
     resetScore();
-
+    displayScore();
   }
 
   return result;
