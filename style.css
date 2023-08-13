@@ -62,6 +62,17 @@ button > img {
   height: 100px;
   width: 100px;
 }
+button {
+  border: #999999 solid 2px;
+  transition: 300ms;
+}
+button:hover {
+  border: #999999 solid 4px;
+  transition: 100ms;
+}
+button:active {
+  background-color: #1E2021;
+}
 
 .gameInfoContainer {
   display: flex;
