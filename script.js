@@ -88,7 +88,7 @@ function playGame(playerChoice) {
     resetScore();
     displayScore();
   } else if (score.losses === 5) {
-    setTimeout(()=>{alert('You Lose! Better luck next time...\n Scoresz')}, 300);
+    setTimeout(()=>{alert('You Lose! Better luck next time...\n Scores has been reset.')}, 300);
     resetScore();
     displayScore();
   }
