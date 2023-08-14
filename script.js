@@ -9,12 +9,11 @@ function resetScore() {
     score.wins = 0;
     score.losses = 0;
     score.draws = 0;
-  }
-}
+  } else {
+      document.querySelector('.scoreDisplay').innerHTML =
+      `Wins: ${score.wins} || Draws: ${score.draws} || Losses: ${score.losses}`; 
+    }
 
-function displayScore() {
-  document.querySelector('.scoreDisplay').innerHTML =
-    `Wins: ${score.wins} || Draws: ${score.draws} || Losses: ${score.losses}`;
 }
 
 // randomises computer choice for rock/paper/scissors
@@ -74,7 +73,6 @@ function playGame(playerChoice) {
     score.losses++;
   }
 
-  displayScore();
   
   // interactive changes for stats board
   document.querySelector('.gameMoves')
@@ -86,18 +84,11 @@ function playGame(playerChoice) {
   if (score.wins === 5) {
     setTimeout(()=>{alert('You Win! Well done.\n Scores have been reset.')}, 300);
     resetScore();
-    displayScore();
   } else if (score.losses === 5) {
-    setTimeout(()=>{alert('You Lose! Better luck next time...\n Scores has been reset.')}, 300);
+    setTimeout(()=>{alert('You Lose! Better luck next time...Scores has been reset.')}, 300);
     resetScore();
-    displayScore();
   }
 
   return result;
-
-  //console.log(score);
-  //console.log(result);
-  //console.log(playerChoice);
-  //console.log(computer);
 }
 
