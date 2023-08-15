@@ -9,11 +9,7 @@ function resetScore() {
     score.wins = 0;
     score.losses = 0;
     score.draws = 0;
-  } else {
-      document.querySelector('.scoreDisplay').innerHTML =
-      `Wins: ${score.wins} || Draws: ${score.draws} || Losses: ${score.losses}`; 
-    }
-
+  }
 }
 
 // randomises computer choice for rock/paper/scissors
@@ -79,13 +75,16 @@ function playGame(playerChoice) {
     .innerHTML = `Player: ${playerChoice} || Computer: ${computer}`;
   document.querySelector('.gameOutcome')
     .innerHTML = `${result}`;
+  document.querySelector('.scoreDisplay').innerHTML =
+    `Wins: ${score.wins} || Draws: ${score.draws} || Losses: ${score.losses}`; 
+    
 
   // code to reset score and determine winner
   if (score.wins === 5) {
-    setTimeout(()=>{alert('You Win! Well done.\n Scores have been reset.')}, 300);
+    setTimeout(()=>{alert('You Win! Well done.\nScores have been reset.')}, 300);
     resetScore();
   } else if (score.losses === 5) {
-    setTimeout(()=>{alert('You Lose! Better luck next time...Scores has been reset.')}, 300);
+    setTimeout(()=>{alert('You Lose! Better luck next time...\nScores has been reset.')}, 300);
     resetScore();
   }
 
