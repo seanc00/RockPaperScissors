@@ -89,10 +89,10 @@ function playGame(playerChoice) {
     setTimeout(()=>{alert('You Win! Well done.\nScores have been reset.')}, 300);
     resetScore();
     totalGames.gameWins++;
-    console.log(totalGames);
   } else if (score.losses === 5) {
     setTimeout(()=>{alert('You Lose! Better luck next time...\nScores has been reset.')}, 300);
     resetScore();
+    totalGames.gameLosses++;
   }
 
   return result;
