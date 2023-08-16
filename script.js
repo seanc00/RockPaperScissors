@@ -4,7 +4,7 @@ const score = {
   losses: 0
 };
 
-const wins = {
+const totalGames = {
   gameWins: 0,
   gameLosses: 0
 };
@@ -88,6 +88,8 @@ function playGame(playerChoice) {
   if (score.wins === 5) {
     setTimeout(()=>{alert('You Win! Well done.\nScores have been reset.')}, 300);
     resetScore();
+    totalGames.gameWins++;
+    console.log(totalGames);
   } else if (score.losses === 5) {
     setTimeout(()=>{alert('You Lose! Better luck next time...\nScores has been reset.')}, 300);
     resetScore();
