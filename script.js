@@ -4,6 +4,11 @@ const score = {
   losses: 0
 };
 
+const wins = {
+  gameWins: 0,
+  gameLosses: 0
+};
+
 function resetScore() {
   if (score.wins === 5 || score.losses === 5) {
     score.wins = 0;
