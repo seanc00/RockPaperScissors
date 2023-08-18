@@ -81,8 +81,7 @@ function playGame(playerChoice) {
   document.querySelector('.gameOutcome')
     .innerHTML = `${result}`;
   document.querySelector('.scoreDisplay').innerHTML =
-    `Wins: ${score.wins} || Draws: ${score.draws} || Losses: ${score.losses}`; 
-    
+    `Wins: ${score.wins} || Draws: ${score.draws} || Losses: ${score.losses}`;   
 
   // code to reset score and determine winner
   if (score.wins === 5) {
@@ -94,6 +93,10 @@ function playGame(playerChoice) {
     resetScore();
     totalGames.gameLosses++;
   }
+
+  document.querySelector('.totalWinsLosses').innerHTML =
+    `Wins: ${totalGames.gameWins} || Losses: ${totalGames.gameLosses}`;
+  
 
   return result;
 }
