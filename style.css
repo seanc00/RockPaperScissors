@@ -85,6 +85,12 @@ button:active {
   height: 250px;
   border: solid 3px #999999;
 }
+
+.gameInfoContainer > p {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: #1E2021 solid 3px;
+}
 .gameOutcome {
   color: #f00b51;
 }
