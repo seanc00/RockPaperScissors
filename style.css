@@ -70,6 +70,7 @@ button > img {
 button {
   border: #999999 solid 2px;
   transition: 300ms;
+  border-radius: 20px;
 }
 button:hover {
   border: #999999 solid 4px;
@@ -196,5 +197,4 @@ button:active {
 .resetScoreBtn {
   background-color: #000000;
   padding: 15px;
-
 }
