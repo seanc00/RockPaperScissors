@@ -97,7 +97,16 @@ function playGame(playerChoice) {
   document.querySelector('.totalWinsLosses').innerHTML =
     `Wins: ${totalGames.gameWins} || Losses: ${totalGames.gameLosses}`;
   
-
   return result;
+}
+
+function resetAllStats() {
+  score.wins = 0;
+  score.losses = 0;
+  score.draws = 0;
+
+  totalGames.gameLosses = 0;
+  totalGames.gameWins = 0;
+
 }
 
