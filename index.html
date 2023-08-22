@@ -9,39 +9,46 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="titleContainer">
-      <img class="title" src="images/RPS.png">
+    <div class="bigContainer">
+      <div class="titleContainer">
+        <img class="title" src="images/RPS.png">
+      </div>
+
+      <div class="container">
+        <div class="playerOptionsContainer">
+          <div>
+            <h3>◉  Pick one to play!  ◉</h3>
+          </div>
+          <div class="playerOptions">
+            <button onclick="
+              playGame('Rock');
+            " class="rock"><img src="" alt="ROCK hand sign"></button>
+            <button onclick="
+              playGame('Paper');
+            " class="paper"><img src="" alt="PAPER hand sign"></button>
+            <button onclick="
+              playGame('Scissors');
+            " class="scissors"><img src="" alt="SCISSORS hand sign"></button>
+          </div>
+        </div>
+        
+        <div class="gameInfoContainer">
+          <h2>SCORE - <span class="gameOutcome">Nil</span></h2>
+          <p class="scoreDisplay">Wins: 0 || Draws: 0 || Losses: 0</p>
+          <h2>Game Moves:</h2>
+          <p class="gameMoves">Player: x_x || Computer: x_x</p>
+          <h2>Total Wins/Losses:</h2>
+          <p class="totalWinsLosses">Wins: 0 || Losses: 0</p>
+        </div>
     </div>
 
-    <div class="container">
-      <div class="playerOptionsContainer">
-        <div>
-          <h3>◉  Pick one to play!  ◉</h3>
-        </div>
-        <div class="playerOptions">
-          <button onclick="
-            playGame('Rock');
-          " class="rock"><img src="" alt="ROCK hand sign"></button>
-          <button onclick="
-            playGame('Paper');
-          " class="paper"><img src="" alt="PAPER hand sign"></button>
-          <button onclick="
-            playGame('Scissors');
-          " class="scissors"><img src="" alt="SCISSORS hand sign"></button>
-        </div>
-      </div>
-      
-      <div class="gameInfoContainer">
-        <h2>SCORE - <span class="gameOutcome">Nil</span></h2>
-        <p class="scoreDisplay">Wins: 0 || Draws: 0 || Losses: 0</p>
-        <h2>Game Moves:</h2>
-        <p class="gameMoves">Player: x_x || Computer: x_x</p>
-        <h2>Total Wins/Losses:</h2>
-        <p class="totalWinsLosses">Wins: 0 || Losses: 0</p>
-      </div>
 
       <div class="help-tip">
         <p>Score 5 points to win!</p>
+    </div>
+
+    <div class="resetScoreContainer">
+      <button class="resetScoreBtn">Reset Score</button>
     </div>
   </body>
 </html>

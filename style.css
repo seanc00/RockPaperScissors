@@ -9,6 +9,11 @@ body {
   color: #999999;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 
 
 .titleContainer {
@@ -180,4 +185,9 @@ button:active {
 @keyframes fadeIn {
   0% { opacity:0; }
   100% { opacity:100%; }
+}
+
+/* Reset score button styles */
+.resetScoreContainer {
+  display: flex;
 }
