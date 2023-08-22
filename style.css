@@ -190,4 +190,11 @@ button:active {
 /* Reset score button styles */
 .resetScoreContainer {
   display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.resetScoreBtn {
+  background-color: #000000;
+  padding: 15px;
+
 }
