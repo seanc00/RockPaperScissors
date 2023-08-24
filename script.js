@@ -73,16 +73,7 @@ function playGame(playerChoice) {
   } else if (result === 'Loss!') {
     score.losses++;
   }
-
-  
-  // interactive changes for stats board
-  document.querySelector('.gameMoves')
-    .innerHTML = `Player: ${playerChoice} || Computer: ${computer}`;
-  document.querySelector('.gameOutcome')
-    .innerHTML = `${result}`;
-  document.querySelector('.scoreDisplay').innerHTML =
-    `Wins: ${score.wins} || Draws: ${score.draws} || Losses: ${score.losses}`;   
-
+ 
   // code to reset score and determine winner
   if (score.wins === 5) {
     setTimeout(()=>{alert('You Win! Well done.\nStats have been updated.')}, 300);
@@ -96,7 +87,13 @@ function playGame(playerChoice) {
 
   document.querySelector('.totalWinsLosses').innerHTML =
     `Wins: ${totalGames.gameWins} || Losses: ${totalGames.gameLosses}`;
-  
+  document.querySelector('.gameMoves')
+    .innerHTML = `Player: ${playerChoice} || Computer: ${computer}`;
+  document.querySelector('.gameOutcome')
+    .innerHTML = `${result}`;
+  document.querySelector('.scoreDisplay').innerHTML =
+    `Wins: ${score.wins} || Draws: ${score.draws} || Losses: ${score.losses}`;   
+
   return result;
 }
 
