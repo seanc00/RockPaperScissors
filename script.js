@@ -85,6 +85,7 @@ function playGame(playerChoice) {
     totalGames.gameLosses++;
   }
 
+  // interactive changes for stats board
   document.querySelector('.totalWinsLosses').innerHTML =
     `Wins: ${totalGames.gameWins} || Losses: ${totalGames.gameLosses}`;
   document.querySelector('.gameMoves')
@@ -95,15 +96,5 @@ function playGame(playerChoice) {
     `Wins: ${score.wins} || Draws: ${score.draws} || Losses: ${score.losses}`;   
 
   return result;
-}
-
-function resetAllStats() {
-  score.wins = 0;
-  score.losses = 0;
-  score.draws = 0;
-
-  totalGames.gameLosses = 0;
-  totalGames.gameWins = 0;
-
 }
 
