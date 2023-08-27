@@ -16,7 +16,7 @@ body {
 
 
 
-.titleContainer {
+.titleContainer , .footerContainer{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,6 +28,12 @@ body {
 }
 .title {
   width: 600px;
+}
+
+.footerContainer {
+  margin-top: 50px;
+  margin-bottom: 0;
+  margin-right: 0;
 }
 
 .container {
