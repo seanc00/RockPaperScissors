@@ -73,6 +73,13 @@ body {
 button > img {
   height: 100px;
   width: 100px;
+  border-radius: 40px;
+  transition: 100ms;
+}
+button > img:hover {
+  transition: 100ms;
+  height: 105px;
+  width: 105px;
 }
 button {
   border: #999999 solid 2px;
