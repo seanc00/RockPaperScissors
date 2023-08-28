@@ -56,5 +56,20 @@
     <div class="footerContainer">
       <p>Copyright © Sean Connolly Dev <script type="text/javascript">document.write( new Date().getFullYear() );</script></p>
     </div>
+
+    <script>
+      function adjustFontSize() {
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  
+        if (screenWidth <= 0.5 * window.screen.width) {
+          document.body.style.fontSize = "12px"; // Adjust this value to your desired font size
+        } else {
+          document.body.style.fontSize = "16px"; // Default font size
+        }
+      }
+  
+      window.addEventListener('resize', adjustFontSize);
+      window.addEventListener('load', adjustFontSize);
+    </script>
   </body>
 </html>
