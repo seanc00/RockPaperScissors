@@ -1,31 +1,29 @@
+/* General styles */
+
 body {
   background-color: #000000;
-  background-color: #000000;
   opacity: 1;
-  background: linear-gradient(135deg, #f00bd955 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #f00b51 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #f00bd955 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #f00b51 25%, #000000 25%) 0px 0/ 80px 80px;}
+  background: linear-gradient(135deg, #f00bd955 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #f00b51 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #f00bd955 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #f00b51 25%, #000000 25%) 0px 0/ 80px 80px;
+  display: flex;
+  flex-direction: column;
+}
 
 * {
   margin: 0;
   color: #999999;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-.titleContainer , .footerContainer{
+.titleContainer, .footerContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgb(0, 0, 0);
-  width:99.6%;
+  width: 99.6%;
   border: solid 3px #999999;
   padding-bottom: 20px;
-  margin-bottom: 40px
+  margin-bottom: 40px;
 }
+
 .title {
   width: 600px;
 }
@@ -42,53 +40,60 @@ body {
   gap: 0;
   align-items: center;
   justify-content: center;
-
 }
+
 .playerOptionsContainer > div > h3 {
   background: rgb(0, 0, 0);
   padding: 20px;
   border-radius: 20px;
   border: solid 3px #999999;
-  width: 300px;
   text-align: center;
   font-size: 25px;
   width: 420px;
 }
+
 .playerOptionsContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 20px;
 }
+
 .playerOptions {
   display: flex;
   gap: 20px;
   padding: 20px;
 }
+
 .playerOptions > button {
   width: 150px;
   height: 150px;
   background-color: rgb(0, 0, 0);
 }
+
 button > img {
   height: 100px;
   width: 100px;
   transition: 100ms;
 }
+
 button > img:hover {
   transition: 100ms;
   height: 105px;
   width: 105px;
 }
+
 button {
   border: #999999 solid 2px;
   transition: 300ms;
   border-radius: 50px;
 }
+
 button:hover {
   border: #999999 solid 4px;
   transition: 100ms;
 }
+
 button:active {
   background-color: #1E2021;
 }
@@ -110,12 +115,12 @@ button:active {
   margin-bottom: 10px;
   border-bottom: #1E2021 solid 3px;
 }
+
 .gameOutcome {
   color: #f00b51;
 }
 
-
-.help-tip{
+.help-tip {
   position: absolute;
   top: 18px;
   right: 18px;
@@ -130,22 +135,20 @@ button:active {
   cursor: default;
 }
 
-.help-tip:before{
-  content:'?';
+.help-tip:before {
+  content: '?';
   font-weight: bold;
   color: #999999;
 }
 
-.help-tip:hover p{
-  display:block;
+.help-tip:hover p {
+  display: block;
   transform-origin: 100% 0%;
-
   -webkit-animation: fadeIn 0.3s ease-in-out;
   animation: fadeIn 0.3s ease-in-out;
-
 }
 
-.help-tip p{    /* The tooltip */
+.help-tip p {
   display: none;
   text-align: left;
   background-color: #000000;
@@ -162,52 +165,173 @@ button:active {
   border-radius: 20px;
 }
 
-.help-tip p:before{ /* The pointer of the tooltip */
+.help-tip p:before {
   position: absolute;
   content: '';
-  width:0;
+  width: 0;
   height: 0;
-  border:6px solid transparent;
-  border-bottom-color:#1E2021;
-  right:10px;
-  top:-12px;
+  border: 6px solid transparent;
+  border-bottom-color: #1E2021;
+  right: 10px;
+  top: -12px;
 }
 
-.help-tip p:after{ /* Prevents the tooltip from being hidden */
-  width:100%;
-  height:40px;
-  content:'';
+.help-tip p:after {
+  width: 100%;
+  height: 40px;
+  content: '';
   position: absolute;
-  top:-40px;
-  left:0;
+  top: -40px;
+  left: 0;
 }
 
 /* CSS animation */
 
 @-webkit-keyframes fadeIn {
-  0% { 
-      opacity:0; 
-      transform: scale(0.6);
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
   }
-
   100% {
-      opacity:100%;
-      transform: scale(1);
+    opacity: 100%;
+    transform: scale(1);
   }
 }
 
 @keyframes fadeIn {
-  0% { opacity:0; }
-  100% { opacity:100%; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 /* Reset score button styles */
+
 .resetScoreContainer {
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
+
 .resetScoreBtn {
   background-color: #000000;
   padding: 15px;
+}
+
+/* Media Queries for tablet and mobile devices */
+
+@media (max-width: 1024px) {
+  .title {
+    width: 80%;
+  }
+
+  .playerOptionsContainer > div > h3 {
+    font-size: 20px;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .playerOptions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .playerOptions > button {
+    width: 100px;
+    height: 100px;
+  }
+
+  button > img {
+    height: 70px;
+    width: 70px;
+  }
+
+  .gameInfoContainer {
+    width: 90%;
+    height: auto;
+  }
+
+  .gameInfoContainer > p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleContainer, .footerContainer {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    width: 90%;
+  }
+
+  .playerOptionsContainer > div > h3 {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .playerOptions {
+    gap: 10px;
+  }
+
+  .playerOptions > button {
+    width: 80px;
+    height: 80px;
+  }
+
+  button > img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .gameInfoContainer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .gameInfoContainer > p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titleContainer, .footerContainer {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    width: 95%;
+  }
+
+  .playerOptionsContainer > div > h3 {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .playerOptions {
+    gap: 5px;
+  }
+
+  .playerOptions > button {
+    width: 60px;
+    height: 60px;
+  }
+
+  button > img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .gameInfoContainer {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .gameInfoContainer > p {
+    font-size: 12px;
+  }
 }
