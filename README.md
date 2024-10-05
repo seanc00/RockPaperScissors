@@ -20,6 +20,3 @@ Creating a game of Rock Paper Scissors against an AI, using JavaScript and HTML,
    
 4. **Main Game Loop:**
    - Combine all three subtasks under one main loop that repeats until either the AI or player reaches a score of 5.
-   
-5. **To Be Done:** 
-   - Add more features, including UI improvements with CSS and buttons for better interaction.
